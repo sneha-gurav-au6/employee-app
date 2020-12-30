@@ -96,7 +96,6 @@ class AllEmployee extends Component {
                                     <li class="nav-item active"></li>
                                 </ul>
                                 <ul className="navbar-nav">
-                                    {" "}
                                     <div>
                                         <button
                                             type="button"
