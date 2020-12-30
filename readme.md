@@ -11,6 +11,9 @@ Employee Application -
 -User authentication
 To list all employees,craete employees and delet employees user need authentication.Here passport js can be used to authrization but I used simple logic to get authrization.
 
+-Form validation
+While registering and login user must enter valide name,password and email.If not form will show an error to user.
+
 -Libreries used:
 Front-end : React , Redux,Bootstrap
 Back-end : Node js,Express js
