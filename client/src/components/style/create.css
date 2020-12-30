@@ -1,0 +1,14 @@
+.new {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../image/ban4.jpg");
+    height: 90vh;
+}
+.formbox {
+    width: 35em;
+    height: 23em;
+    margin-top: 3em;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    color: white;
+}
