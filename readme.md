@@ -1,14 +1,15 @@
 -Documentation Of Project:
-User Application -
-1.This is the application where user can create users (giving name,email ,passowrd).i.e by registering user.After register user need to login ,if already registerd he can directly login
-2.for creating new user also need to register with ew user details
-3.user can see all user list in decending order by clicking all user button .
+Employee Application -
+1.This is the application where user can create employee,delet employees and list all employees.
+2.for creating new employee,user need to register with name,email and password.After registration user can login.
+3.Only registered user can see all employee list in decending order by clicking get all employee list button.
 
-4.By clicking on delet button the particular user gets deleted.any user can delet any another user as per question
-5.By clicking on update user button user details can update (here user can give/update extra details like hobbies gender,address,college etc )
-6.hobbies will select on clicking on heckbox button and select college from list of colleges.when user gets logout user authentication will remove.
-7.app is deployed on heroku
-8.College list while updateing profile only visibling when application runs on localhost.
+4.By clicking on delet button the particular employee gets deleted.User can delet any employee.
+5.User is nevigated from all employee list page where by clicking on create employee button user can create new employee.
+6.Employee card is having name,age ,salary and id of employee.
+
+-User authentication
+To list all employees,craete employees and delet employees user need authentication.Here passport js can be used to authrization but I used simple logic to get authrization.
 
 -Libreries used:
 Front-end : React , Redux,Bootstrap
@@ -18,11 +19,13 @@ For Authorization : Passport js,jwt token
 
 -steps to execute program:
 
-1. Type the url in search bar : https://basicuser-app.herokuapp.com/
+1. Type the url in search bar : https://employee-new-app.herokuapp.com/
 2. When website loads user can perform operations
 
-User application heroku deployed link:
-https://basicuser-app.herokuapp.com/
+application heroku deployed link:
+https://employee-new-app.herokuapp.com/
 
 Github link:
-https://github.com/sneha-gurav-au6/userApp
+https://github.com/sneha-gurav-au6/employee-app
+
+\*Note- The api link provided in assignment question is not working (api link sending error massage ,not providing data) for that reason backend is created.
