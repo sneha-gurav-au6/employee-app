@@ -89,7 +89,7 @@ class AllEmployee extends Component {
                             </button>
 
                             <div
-                                className={"collapse navbar-collapse" + show1}
+                                className={"collapse navbar-collapse " + show1}
                                 id="navbarNav"
                             >
                                 <ul class="navbar-nav  mr-auto">
