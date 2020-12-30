@@ -12,6 +12,7 @@ toast.configure();
 class AllEmployee extends Component {
     state = {
         users: "",
+        showCollapsedMenu: false,
     };
 
     //calling all user list route
@@ -55,8 +56,14 @@ class AllEmployee extends Component {
         });
         this.props.history.push("/login");
     };
+    toggleMenu = () => {
+        this.setState({
+            showCollapsedMenu: !this.state.showCollapsedMenu,
+        });
+    };
     render() {
         console.log(this.props.user);
+        const show1 = this.state.showCollapsedMenu ? "show" : null;
         return (
             <div className="main">
                 <div className="">
@@ -82,13 +89,14 @@ class AllEmployee extends Component {
                             </button>
 
                             <div
-                                className={"collapse navbar-collapse "}
+                                className={"collapse navbar-collapse" + show1}
                                 id="navbarNav"
                             >
                                 <ul class="navbar-nav  mr-auto">
                                     <li class="nav-item active"></li>
                                 </ul>
                                 <ul className="navbar-nav">
+                                    {" "}
                                     <button
                                         type="button"
                                         className="btn btn-danger card-link"
